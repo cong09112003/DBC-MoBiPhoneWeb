@@ -1,0 +1,190 @@
+body {
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--app-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*------------------------------------*\
+  # Panels
+\*------------------------------------*/
+
+.panel-signing  {
+  border-radius: 0;
+  position: relative;  
+  /* box-shadow: 0 2px 5px 0 rgba(46,61,73,.2); */
+}
+.panel-signing .signing-remove {
+  float: right;
+}
+.signing-remove .glyphicon-remove-circle {
+  font-size: 21px;
+  color: #a94442;
+}
+.panel-signing .signing-info {
+  padding: 5px 15px;
+  background-color: #f5f5f5;
+  border-bottom: solid 1px #ddd;
+}
+.signing-name,
+.signing-date,
+.signing-time {
+  display: inline-block;
+}
+.signing-date .glyphicon,
+.signing-time .glyphicon { 
+  color: #428bca;
+}
+.signing-date {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: solid 1px #ddd;
+}
+.panel-signing .panel-footer {
+  padding: 5px 15px;
+}
+.signing-details-collapse {
+  background-color: #E8E8E8;
+  border: solid 5px #fff;
+}
+
+@media ( min-width: 768px ) {
+  .signing-details-collapse {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px 0 rgba(46,61,73,.2);
+  }
+}
+
+/*------------------------------------*\
+  # List
+\*------------------------------------*/
+
+.dl-no-margin {
+  margin: 0;
+}
+.dl-bordered dt {
+  font-size: 12px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ddd;
+}
+.dl-bordered dd {
+  margin-bottom: 10px;
+}
+
+/*------------------------------------*\
+  # Buttons
+\*------------------------------------*/
+
+.btn-signing-details {
+  font-size: 12px;
+  color: #fff;
+  text-align: left;
+  border-radius: 0;
+  border-color: #fff;
+  background: #428bca;
+}
+.btn-signing-details:hover,
+.btn-signing-details:focus {
+  color: #fff;
+  border-color: #fff;
+  background: #357EBD;
+}
+.btn-signing-details:active,
+.btn-signing-details:active:hover {
+  color: #fff;
+  border-color: #fff;
+  background: #428bca;
+}
+
+
+/*------------------------------------*\
+  # Header
+\*------------------------------------*/
+
+.header-divider {
+  margin-top: 15px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #ddd;
+}
+
+/*------------------------------------*\
+  # Utility Classes
+\*------------------------------------*/
+
+.brand-text {
+  color: #428bca;
+}
+
+/*------------------------------------*\
+  # Tables
+\*------------------------------------*/
+
+.table-no-margin {
+  margin-bottom: 0;
+}
+.table-invoice th {
+  background: #ddd;
+}
+.table-invoice td.invoice-item-remove {
+  vertical-align: middle;
+}
+.table-invoice td.invoice-item-remove .glyphicon-remove-circle {
+  font-size: 21px;
+  color: #a94442;
+}
+
+/*------------------------------------*\
+  # Modal
+\*------------------------------------*/
+
+.modal .modal-header,
+.modal .modal-footer {
+  background-color: #ddd;
+}
+.modal .modal-header .modal-title span {
+  color: #428bca;
+}
+.modal .modal-body .form-group {
+  margin-bottom: 5px;
+}
+.modal .modal-body .label {
+  color: #474544;
+  padding: 20px 10px;
+}
+.modal .modal-body .tab-pane {
+  padding: 20px 10px;
+}
+
+@media (min-width: 992px) {
+  .modal .modal-lg {
+    width: 700px;
+  }
+}
+
+/*------------------------------------*\
+  # Modal
+\*------------------------------------*/
+
+.form-inline-fields .form-control {
+  display: block;
+  width: 32%;
+  margin-right: 2%;
+  float: left;
+}
+.form-inline-fields .form-control:last-child {
+  margin-right: 0;
+}
+
+.form-inline-group .form-group {
+  display: block;
+  width: 32%;
+  margin-right: 2%;
+  float: left;
+}
+.form-inline-group .form-group:last-child {
+  margin-right: 0;
+}
